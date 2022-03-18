@@ -1,0 +1,42 @@
+{
+    // 使用 IntelliSense 了解相关属性。
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug(JLINK)",
+            "cwd": "${workspaceRoot}",
+            "executable": "${config:axfFilePath}",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "device": "${config:DbgDeviceIdentifier}",
+            "svdFile": "${config:svdFilePath}",
+            "interface": "swd",
+            "runToMain": true,
+            // "preLaunchTask":"",
+            // "postDebugTask":"",
+            // "swoConfig": {
+            //     "enabled": true,
+            //     "cpuFrequency": 16800000,
+            //     "swoFrequency": 500000,
+            //     "source": "probe",
+            //     "decoders": [
+            //         { "type": "console", "label": "ITM", "port": 0 }
+            //     ]
+            // }
+        },
+        {
+            "name": "Cortex Debug(ST-LINK)",
+            "cwd": "${workspaceRoot}",
+            "executable": "${config:axfFilePath}",
+            "request": "attach",
+            "type": "cortex-debug",
+            "servertype": "stutil",
+            "svdFile": "${config:svdFilePath}",
+            "device": "${config:DbgDeviceIdentifier}",
+            "v1": false
+        }
+    ]
+}

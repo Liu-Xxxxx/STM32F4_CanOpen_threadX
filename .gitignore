@@ -1,0 +1,3 @@
+MDK-ARM/**
+!MDK-ARM/GateWay.uvprojx
+!MDK-ARM/startup_stm32f407xx.s

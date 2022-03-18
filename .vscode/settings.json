@@ -1,0 +1,20 @@
+{
+    /* 以下设置需要根据工程内容手动调整 *****************************************************/
+    /* keil-mdk程序完整路径 */
+    "uvPath": "G:/Keil_v5/UV4/UV4.exe",
+    /* keil工程文件 .uvprojx的完整路径 */
+    "uvprojxPath": "MDK-ARM/GateWay.uvprojx",
+    /* keil工程编译输出的.axf文件 相对路径 */
+    "axfFilePath": "MDK-ARM/GateWay/GateWay.axf",
+    /* 芯片设备描述文件 */
+    "svdFilePath": "G:/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/2.3.0/CMSIS/SVD/STM32F40x.svd",
+    /* 芯片设备名称 */
+    "DbgDeviceIdentifier": "STM32F407ZE",
+    /* 以下为vscode工作区配置 */
+    "files.exclude": {
+        "MDK-ARM/**":true,
+    },
+    "files.watcherExclude": {
+        "MDK-ARM/**":true,
+    },
+}
